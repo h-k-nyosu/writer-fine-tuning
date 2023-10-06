@@ -83,7 +83,7 @@ def write_to_file(contents):
             paragraphs = []
             paragraph = ""
             for line in content.split('\n'):
-                if len(paragraph) + len(line) > 1000:
+                if len(paragraph) + len(line) > 300:
                     if paragraph:
                         paragraphs.append(paragraph)
                     paragraph = line + '\n'
